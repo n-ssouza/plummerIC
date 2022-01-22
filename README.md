@@ -18,4 +18,7 @@ The directory `InitialConditions` will be create with the output file within it.
 
 # Comments
 1. The [`snapwrite.py`](https://github.com/elvismello/clustep/blob/master/clustep/snapwrite.py) module is exactly the same as in [Elvis Mello's](https://github.com/elvismello) adaptation for python 3 of [Rafael Ruggiero's](https://github.com/ruggiero) clustep, necessary in order to write the output in the gadget2 binary format or hdf5.
-2. The overall structure of `ic.py` is basically the same as [clustep's](https://github.com/elvismello/clustep). Therefore I plan on creating a more general software which would be able to generate initial conditions for many different profiles (for instance, implementing King's model into the code should be an easy task).  
+2. The overall structure of `ic.py` is basically the same as [clustep's](https://github.com/elvismello/clustep). Therefore I plan on creating a more general software which would be able to generate initial conditions for many different profiles (for instance, implementing King's model into the code should be an easy task).
+
+# Example
+![Plummer sphere visualization in glnemo2](plummer.png)
