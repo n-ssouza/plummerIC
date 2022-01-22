@@ -120,19 +120,19 @@ def write_file(Positions, Velocities, Masses):
     if not (os.path.exists(savePath)):
         os.makedirs(savePath)
 
+    x = Positions[0]
+    y = Positions[1]
+    z = Positions[2]
+
+    vx = Velocities[0]
+    vy = Velocities[1]
+    vz = Velocities[2]
+    
     if (filetype == "txt"):
 
         #Header info: 
         info = "Plummer Sphere Model Random Initial Conditions from ic.py"
         info += "\n\n        masses             position_x           position_y           position_z           velocity_x           velocity_y           velocity_z"
-
-        x = Positions[0]
-        y = Positions[1]
-        z = Positions[2]
-
-        vx = Velocities[0]
-        vy = Velocities[1]
-        vz = Velocities[2]
 
         np.savetxt(savePath + filename + '.txt', list(zip(Masses, x, y, z, vx, vy, vz)), header = info, fmt="%20.8e")
 
@@ -158,7 +158,6 @@ def write_file(Positions, Velocities, Masses):
 
         write_snapshot(n_part, data_list, outfile = savePath + filename, file_format = filetype)
         
-
 
 if (__name__ == '__main__'):
     main()
