@@ -10,7 +10,6 @@ from configparser import ConfigParser
 # [T] = 0.98 Gyr
 # [G] = kpc (km/s)^2 (1e10 Msun)^{-1}
 
-G = 43007.1
 
 def Rho(M, a, r):
     return 0.75*(M/(np.pi*(np.power(a, 3)))) * np.power((1 + (np.square(r) / np.square(a))), -2.5)
