@@ -1,6 +1,6 @@
 # About
 The Plummer Model may be useful to represent stellar systems such as globular clusters, dwarf galaxies, or to serve as a toy model in N-body simulations containing these types of simple spherical distribution of particles.
-This python script generates initial conditions in the usual Gadget system of units (check the parameters file) for a Plummer Sphere. There are three possible output formats: txt, GADGGET-2 binary, HDF5.
+This python script generates initial conditions in the usual Gadget system of units (check the parameters file) for a Plummer Sphere. There are three possible output formats: txt, GADGET-2 binary, HDF5.
 
 # Required python packages
 - os  
