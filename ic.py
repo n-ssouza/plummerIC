@@ -150,7 +150,6 @@ def write_file(Positions, Velocities, Masses):
         #Number of particles of each gadget type: 
         n_part = [0, 0, 0, 0, N, 0]   # only stars 
 
-        #Gadget type of each particle
         IDs = np.arange(1, N + 1)
 
         data_list = [pos_vectors[0], vel_vectors[0], IDs, Masses]
